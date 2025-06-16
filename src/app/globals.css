@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.avenir-book {
+  font-family: var(--font-avenir-book);
+}
+
+.avenir-black {
+  font-family: var(--font-avenir-black);
+}
+
+.avenir-roman {
+  font-family: var(--font-avenir-roman);
+}
+
+body {
+  font-family: var(--font-avenir-book);
+}
+
+h1 {
+  font-family: var(--font-avenir-black);
+}
+
+p {
+  font-family: var(--font-avenir-roman);
+}
+
+.table-label {
+  font-family: var(--font-avenir-black);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.table-data {
+  font-family: var(--font-avenir-book);
+  font-size: 12px;
+}
+
