@@ -17,7 +17,7 @@ interface Note {
   content: string;
 }
 
-interface Call {
+export interface Call {
   id: string;
   direction: string;
   from: string;

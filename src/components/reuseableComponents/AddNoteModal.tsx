@@ -3,11 +3,14 @@
 import { Modal, Input } from "antd";
 import { getCallTypeColor } from "@/lib/helpers";
 
+// Import the Call type from where it's already declared
+import type { Call } from "@/app/(dashboard)/calls/page"; // adjust path if different
+
 interface AddNoteModalProps {
   open: boolean;
   onCancel: () => void;
   onSubmit: () => void;
-  call: any;
+  call: Call | null;
   note: string;
   setNote: (val: string) => void;
 }

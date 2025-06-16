@@ -3,12 +3,10 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import TTLogo from "@/assets/images/TT Logo.png";
-import { useRouter } from "next/navigation";
 import { Button } from "antd";
 import { getToken, logout } from "@/lib/auth";
 
 export default function Header() {
-  const router = useRouter();
   const [token, setToken] = useState<string | null>(null);
 
   useEffect(() => {
